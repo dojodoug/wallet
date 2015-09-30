@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @racket.amount %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @racket.entity %>
+</p>
+
+<%= link_to 'Edit', edit_racket_path(@racket) %> |
+<%= link_to 'Back', rackets_path %>
