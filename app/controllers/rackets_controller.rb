@@ -6,6 +6,10 @@ class RacketsController < ApplicationController
     @rackets = Racket.all
   end
 
+  def dashboard
+    @current_balance = Racket.current_balance
+  end
+
   # GET /rackets/1
   def show
   end
