@@ -3,7 +3,7 @@
 <h1>Listing Rackets</h1>
 
 <table>
-  
+
   <thead>
     <tr>
       <th>Amount</th>
@@ -25,6 +25,14 @@
   </tbody>
 </table>
 
+<p><u>Current Balance</u></p>
+Your current balance is: $<%= @current_balance %>
+
+<p><u>Transactions Summary</u></p>
+Your total number of transactions is: <%= @racket_total %>
+
+<br>
 <br>
 
 <%= link_to 'New Racket', new_racket_path %>
+<%= link_to 'Go Back to Dashboard', root_path %>

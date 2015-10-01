@@ -4,11 +4,14 @@ class RacketsController < ApplicationController
   # GET /rackets
   def index
     @rackets = Racket.all
+    @current_balance = Racket.current_balance
+    @racket_total = Racket.racket_total
   end
 
   def dashboard
     @current_balance = Racket.current_balance
     @racket_total = Racket.racket_total
+    @broke = Racket.broke
   end
 
   # GET /rackets/1

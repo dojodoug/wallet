@@ -2,10 +2,14 @@
 
 <h1>DASHBOARD</h1>
 
-<p>Current Balance</p>
+<p><u>Current Balance</u></p>
 Your current balance is: $<%= @current_balance %>
 
-<p>Transactions Summary</p>
+<% if @broke %>
+    <h2>Ay Dios Mio! Your balance is LOCO!</h2>
+<% end %>
+
+<p><u>Transactions Summary</u></p>
 Your total number of transactions is: <%= @racket_total %>
 
 <br>
